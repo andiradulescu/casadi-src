@@ -47,7 +47,7 @@ class CMakeBuild(build_ext):
             '-DSWIG_IMPORT=ON',
             '-DWITH_PYTHON=ON',
             '-DWITH_EXAMPLES=OFF',
-            '-DPYTHON_INCLUDE_DIR=' + self.include_dirs[0],
+            '-DPYTHON_INCLUDE_DIR=' + self.include_dirs[-1],
             '-DCMAKE_INSTALL_PREFIX=' + extdir,
             '-DWITH_SELFCONTAINED=ON',
             '-DWITH_DEEPBIND=ON'
